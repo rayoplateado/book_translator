@@ -38,12 +38,12 @@ class AnthropicClient:
         user_prompt += f"Target language: {target_language}\n\n"
         user_prompt += f"Text to translate:\n{text}\n"
 
-        response = self.client.messages.create(
-            model="claude-3-sonnet-20240229",
-            max_tokens=4096,
+        message = self.client.beta.messages.create(
+            model="claude-3-5-sonnet-20240620",
+            max_tokens=8192,
             system=system_prompt,
             messages=[
                 {"role": "user", "content": user_prompt}
             ]
         )
-        return response.content[0].text
+        return message.content[0].text
