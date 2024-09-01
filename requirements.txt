@@ -1,4 +1,4 @@
-anthropic==0.3.0
+anthropic==0.8.0
 ebooklib==0.17.1
 rpy2==3.5.11
 pytest==7.3.1
