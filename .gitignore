@@ -64,6 +64,7 @@ data/input/*
 data/output/*
 !data/input/.gitkeep
 !data/output/.gitkeep
+characters.json
 
 # Configuration files that might contain sensitive information
 config.ini
